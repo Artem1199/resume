@@ -1,0 +1,5 @@
+
+merge pdf
+gswin32 -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=Merged.pdf -dBATCH 1.pdf 2.pdf 3.pdf
+
+Find pdf in the same file as the main.tex file
