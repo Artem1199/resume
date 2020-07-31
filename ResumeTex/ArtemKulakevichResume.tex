@@ -1,3 +1,5 @@
+
+
 %% start of file 'template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
@@ -7,7 +9,7 @@
 
 
 
-\documentclass[letterpaper]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[letterpaper,11pt]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \usepackage{textcomp}
 \usepackage{comment}
 % moderncv themes
@@ -21,7 +23,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.916]{geometry}
+\usepackage[scale=0.85]{geometry}
 %\setlength{\hintscolumnwidth}{1.98cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -33,7 +35,7 @@
 \homepage{linkedin.com/in/artem-kulakevich/}
     \begin{document}
 \makecvtitle
-\vspace*{-.8cm}
+\vspace*{-1.0cm}
     
 \section{\underline{Education}}
 
@@ -56,16 +58,16 @@
 
 \section{\underline{Work Experience}}
 \cventry
-{Dec 2016 -- Present\\40 hr/week}
+{Dec 2016 -- Present}
 {Production Specialist III}
 {Micro Systems Engineering Inc.}
 {Lake Oswego, OR}
 {}
 {\begin{itemize}%
 %\item Certified for all back-end production processes; more certifications than anyone in the area.
-		\item Perform troubleshooting, wiring, and soldering tasks on automated systems and fixtures.
+		\item Execute troubleshooting, wiring, and soldering tasks on automated systems and electrical fixtures.
 		\item Backup shift lead for production tasks, designated to assign work, and resolve communication issues.
-		\item Introduce new production steps, update production documents, and perform training.
+		\item Support engineering by introducing new production steps, update production documents, and  training.
 		\item Work on LabVIEW software changes for production imaging cells, including code reviews.
 	\end{itemize}}
 	
@@ -76,7 +78,7 @@
 {Lake Oswego, OR}
 {}
 {\begin{itemize}%
- \item Worked with senior engineers to implement software changes to automated 4-axis imaging cell robot.
+ \item Collaborated with senior engineers to implement software changes to automated 4-axis imaging cell robot.
  \item Introduced log4net logging to SQL, data collection to a digital factory, and changes to the state machine that reduced chances of collision and product loss.
 	\end{itemize}}
 	
@@ -92,7 +94,7 @@
 %	\end{itemize}}
 
 \section{\underline{Skills}}
-\cvitem{\textbf{Languages}}{C++, C, Rust, LabVIEW 12.0, ARM Assembly, SystemVerilog, Matlab}
+\cvitem{\textbf{Languages}}{C++, C, Rust, LabVIEW 12.0, ARM Assembly, SystemVerilog, Verilog, Matlab, Russian}
 \cvitem{\textbf{Programs}}{Git, Linux (Ubuntu), Windows, LTspice, Cadence Virtuoso, Visual Studio, MS Office, SAP}
 \cvitem{\textbf{Hardware}}{Soldering, Oscilloscope (Tektronix/Rigol), Function Generator (Tektronix), Power Supply}
 
@@ -104,7 +106,7 @@
 {}
 {\textit{Rust, OpenOCD, GDB}}
 {}
-{Built a self balancing robot using STM32f303 Discovery board.  Programmed wireless data telemetry and Madgwick filter for IMU sensor fusion using embedded Rust. Currently working on tuning and wireless controls.\\}
+{Assembled a self balancing robot using STM32f303 Discovery board.  Programmed wireless data telemetry and Madgwick filter for IMU sensor fusion using embedded Rust.\\}
 
 
 \cventry
@@ -129,7 +131,7 @@
 {}
 {\textit{C++, Git}}
 {}
-{Designed a 5-stage MIPS simulator in C++ and tested output with provided generic memory image.  The simulator was able to perform basic data manipulation on memory image.\\}
+{Designed a 5-stage MIPS simulator in C++ and tested output with given generic memory image.  The simulator was able to perform basic data manipulation on memory image.\\}
 
 \cventry
 {Sep 2019 -- Feb 2020}
@@ -137,7 +139,7 @@
 {}
 {\textit{Virtuoso 6.1.8, ADE, OCEAN/SKILL}}
 {}
-{Designed standard library components using Cadence Virtuoso layout and ADE tools.  Wrote scripts to simulate and measure output values with different temperatures, inputs voltages, and input rise times.\\}	
+{Developed standard library components using Cadence Virtuoso layout and ADE tools.  Composed scripts to simulate and measure output values with different temperatures, inputs voltages, and input rise times.\\}	
 
 \cventry
 {Sep 2019 -- Dec 2020}
@@ -145,7 +147,7 @@
 {}
 {\textit{LTspice, Soldering, Oscilloscope}}
 {}
-{Designed a complimentary symmetry audio amplifier using mostly discrete BJTs to drive a 10W speaker.  Soldered, designed and tested using homelab equipment.\\}
+{Produced a complimentary symmetry audio amplifier design using mostly discrete BJTs to drive a 10W speaker.  Soldered, designed and tested using homelab equipment.\\}
 
 \cventry
 {Sep 2018 -- Feb 2019}
