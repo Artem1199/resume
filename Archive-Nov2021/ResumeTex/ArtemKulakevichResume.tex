@@ -1,0 +1,204 @@
+
+
+%% start of file 'template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+
+\documentclass[letterpaper,11pt]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{textcomp}
+\usepackage{comment}
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{1.98cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+    % Profile
+\name{Artem Kulakevich}{}
+\address{Beaverton, Oregon}
+\phone[mobile]{503-750-3225}
+\email{Artem3@pdx.edu}
+\homepage{linkedin.com/in/artem-kulakevich/}
+    \begin{document}
+\makecvtitle
+\vspace*{-1.0cm}
+    
+\section{\underline{Education}}
+
+\cventry
+{Jun 2019 -- Present}
+{Master of Science, Electrical Engineering}
+{Portland State University}
+{\textit{Portland, OR}}
+{}
+{\textbf{GPA: 4.00/4.00}, \textit{Expected: Jun 2021}}
+{}
+\cventry
+{Sep 2017 -- Jun 2020}
+{Bachelor of Science, Electrical Engineering}
+{Portland State University}
+{\textit{Portland, OR}}
+{}
+{\textbf{GPA: 3.97/4.00}, \textit{Summa cum laude}}
+{}
+
+\section{\underline{Work Experience}}
+\cventry
+{Dec 2016 -- Present}
+{Production Specialist III}
+{Micro Systems Engineering Inc.}
+{Lake Oswego, OR}
+{}
+{\begin{itemize}%
+%\item Certified for all back-end production processes; more certifications than anyone in the area.
+		\item Execute troubleshooting, wiring, and soldering tasks on automated systems and electrical fixtures.
+		\item Backup shift lead for production tasks, designated to assign work, and resolve communication issues.
+		\item Support engineering by introducing new production steps, update production documents, and  training.
+		\item Work on LabVIEW software changes for production imaging cells, including code reviews.
+	\end{itemize}}
+	
+\cventry
+{Sep 2019 -- Jan 2020}
+{Engineering Internship Project}
+{Micro Systems Engineering Inc.}
+{Lake Oswego, OR}
+{}
+{\begin{itemize}%
+ \item Collaborated with senior engineers to implement software changes to automated 4-axis imaging cell robot.
+ \item Introduced log4net logging to SQL, data collection to a digital factory, and changes to the state machine that reduced chances of collision and product loss.
+	\end{itemize}}
+	
+	
+%\cventry
+%{Jun 2015 -- Dec 2016}
+%{Crew Member}
+%{Wendy's Restaurant}
+%{Portland OR}
+%{}
+%{\begin{itemize}%
+%		\item First job after high school to pay for college. Strong focus on communication and teamwork.
+%	\end{itemize}}
+
+\section{\underline{Skills}}
+\cvitem{\textbf{Languages}}{C++, C, Rust, LabVIEW 12.0, ARM Assembly, SystemVerilog, Verilog, Matlab, Russian}
+\cvitem{\textbf{Programs}}{Git, Linux (Ubuntu), Windows, LTspice, Cadence Virtuoso, Visual Studio, MS Office, SAP}
+\cvitem{\textbf{Hardware}}{Soldering, Oscilloscope (Tektronix/Rigol), Function Generator (Tektronix), Power Supply}
+
+
+\section{\underline{Projects}}
+\cventry
+{Jun 2020 -- Present}
+{Rust Self Balancing Robot}
+{}
+{\textit{Rust, OpenOCD, GDB}}
+{}
+{Assembled a self balancing robot using STM32f303 Discovery board.  Programmed wireless data telemetry and Madgwick filter for IMU sensor fusion using embedded Rust.\\}
+
+
+\cventry
+{Jan 2020 -- Jun 2020}
+{Senior Capstone}
+{}
+{\textit{Rust, C++, Arduino, Kind2, Lustre, PHP, SQL, Apache2}}
+{}
+{Modified Kind2 Lustre to Rust compiler to generate embedded Rust code from a verifiable language.  Streamlined the process of creating verifiable embedded controllers.  Found Rust PID controller to have identical real-world performance to controller written in C++.\\}
+	
+%\cventry
+%{Oct 2019 -- Jan 2020}
+%{Module Imaging Cell}
+%{}
+%{\textit{LabVIEW 12.0, log4net}}
+%{}
+%{Implemented software changes to automated production cell software.  Introduced log4net logging to SQL, data collection to a digital factory, and changes to the state machine that reduced chances of collision and product loss.\\}
+
+\cventry
+{Apr 2020 -- Jun 2020}
+{MIPS-lite Simulator}
+{}
+{\textit{C++, Git}}
+{}
+{Designed a 5-stage MIPS simulator in C++ and tested output with given generic memory image.  The simulator was able to perform basic data manipulation on memory image.\\}
+
+\cventry
+{Sep 2019 -- Feb 2020}
+{CMOS Standard Library Design}
+{}
+{\textit{Virtuoso 6.1.8, ADE, OCEAN/SKILL}}
+{}
+{Developed standard library components using Cadence Virtuoso layout and ADE tools.  Composed scripts to simulate and measure output values with different temperatures, inputs voltages, and input rise times.\\}	
+
+\cventry
+{Sep 2019 -- Dec 2020}
+{Class AB Audio Amplifier}
+{}
+{\textit{LTspice, Soldering, Oscilloscope}}
+{}
+{Produced a complimentary symmetry audio amplifier design using mostly discrete BJTs to drive a 10W speaker.  Soldered, designed and tested using homelab equipment.\\}
+
+\cventry
+{Sep 2018 -- Feb 2019}
+{ARM Sitara AM335x UART / I2C}
+{}
+{\textit{ARM Assembly, C}}
+{}
+{Programmed BeagleBone Black to communicate with an RC8660 talker boards and NewHaven LCD using assembly and C.\\}	
+
+
+
+%\cventry
+%{Sep 2019}
+%{Interactive IMU Cube | ECE 411}
+%{}
+%{\textit{C++, Soldering, MS Project, Git}}
+%{}
+%{}	
+
+%\cventry
+%{Sep 2019 -- Dec 2019}
+%{Interactive IMU Cube | ECE 411}
+%{}
+%{\textit{C++, Soldering, MS Project, Git}}
+%{}
+%{Worked with a team to design a PCB for ATmega328p with necessary bypass, addressable LEDs, and IMU. Personally programmed processor to control LEDs using physical movement.\\}
+	
+%\cventry
+%{Sep 2019}
+%{Class AB Audio Amplifier | ECE 521}
+%{}
+%{\textit{LTspice, Soldering, Oscilloscope}}
+%{}
+%{}	
+
+
+%\cventry
+%{Jun 2019}
+%{ASIC Design | ECE 581}
+%{}
+%{\textit{SystemVerilog, Design Compiler, Git, Linux}}
+%{}
+%{}
+	
+	
+%\cventry
+%{Sep 2018}
+%{ARM Sitara AM335x UART / I2C | ECE 372}
+%{}
+%{\textit{ARM Assembly, C}}
+%{}
+%{}			
+
+\end{document}

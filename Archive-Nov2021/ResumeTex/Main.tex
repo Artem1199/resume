@@ -1,0 +1,165 @@
+%% start of file 'template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+
+\documentclass[letterpaper]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{textcomp}
+\usepackage{comment}
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.93]{geometry}
+\setlength{\hintscolumnwidth}{1.98cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+    % Profile
+\name{Artem Kulakevich}{}
+\address{Beaverton Oregon}
+\phone[mobile]{503-750-3225}
+\email{Artkulak@gmail.com}
+    \begin{document}
+\makecvtitle
+\vspace*{-.8cm}
+    
+\section{Education}
+
+\cventry
+{Jun 2019 -- Present}
+{MS in Electrical Engineering}
+{Portland State University}
+{\textbf{GPA: 4.00}}
+{\textit{Portland, OR}}
+{\textit{Expected: Jun 2021}}
+{}
+\cventry
+{Sep 2017 -- Present}
+{BS in Electrical Engineering}
+{Portland State University}
+{\textbf{GPA: 3.97}}
+{\textit{Portland, OR}}
+{\textit{Expected: Jun 2020}}
+{}
+\vspace{-2mm}
+\section{Work Experience}
+\cventry
+{Dec 2016 -- Present}
+{Production Specialist III}
+{Micro Systems Engineering Inc.}
+{Lake Oswego, OR}
+{}
+{\begin{itemize}%
+	\item Swing shift production lead: 
+	{\begin{itemize}
+		\item Assigned as the swing shift backend production lead; required to plan out tasks for half a dozen employees.
+		\item Certified for and operate more production processes than the majority of other employees.
+	\end{itemize}}
+	\item Engineering Assistant:
+	{\begin{itemize}
+		\item Assist engineering team with introducing new production processes, workflow changes, and training.
+		\item Work on LabView software changes for production imaging cell, including documentation and code reviews.
+		\end{itemize}}
+	\end{itemize}}
+\vspace{-2mm}
+\section{Skills}
+\cvitem{\textbf{Languages}}{LabVIEW, C, Arduino, SystemVerilog, Arm Assembly}
+\cvitem{\textbf{Software}}{LabView, C, Arduino, SystemVerilog, Arm Assembly}
+\cvitem{\textbf{Hardware}}{Soldering, Electrical Wiring, Oscilloscope, Function Generator, DMM, Schematics}
+\cvitem{\textbf{General}}{Excel, Word, PowerPoint, LaTex, LTSpice, Git}
+	\vspace{-2mm}
+\section{Projects}
+\cventry
+{}
+{Module Imaging Cell - LabView Update}
+{}
+{\textit{LabView, log4net, digital factory}}
+{}
+{Implemented software changes to automated imaging cell, introducing log4net logging to SQL, data collection to digital factory, and changes to state machine meant to reduce chances of collisions and product loss.\\}
+\vspace{-1mm}	
+	
+\cventry
+{}
+{Class AB Audio Amplifier}
+{}
+{\textit{LTSpice, Soldering, Oscilloscope}}
+{}
+{Converted a computer power supply into a bench top power supply. Designed a complimentary symmetry audio amplifier to drive a 10W speaker using personal oscilloscope and DMM.\\}
+\vspace{-1mm}	
+	
+\cventry
+{}
+{Automated Work Cell - Biomonitor III}
+{}
+{\textit{Epson Vision, Epson RC+ 6.0}}
+{}
+{Taught an Epson 6-Axis ceiling mounted robot pick points, transfer points and vision fiducials for processing thousands of delicate 1 x 3 cm medical implants.  Completed, verified, documented, and signed off for production.\\}
+\vspace{-1mm}	
+	
+\cventry
+{}
+{Module Imaging Cell - Assembly}
+{}
+{\textit{LabView, Epson RC+, Soldering, Crimping}}
+{}
+{Rebuilt multiple 4-Axis robots based on BOM, retaught robots for production, created documentation for teaching robots in the future. Continue to maintain robots and make improvements.\\}
+\vspace{-1mm}	
+	
+\cventry
+{}
+{Blur Detection and Image Matching}
+{}
+{\textit{LabView NI Vision}}
+{}
+{Created a VI that does image matching based on a template, converts a bounding box to an region of interest, and then uses the region of interest to find a blur average value that is then stored for use in a config file.  \\}
+\vspace{-1mm}	
+
+\cventry
+{}
+{ASIC Design}
+{}
+{\textit{SystemVerilog, Design Compiler, Git, Linux}}
+{}
+{Programmed multiple Verilog designs including FIFO, counters, and traffic lights.  Synthesized the projects for comparison with simulation.\\}
+\vspace{-1mm}	
+	
+\cventry
+{}
+{ARM Sitara AM335x UART / I2C}
+{}
+{\textit{ARM Assembly, C}}
+{}
+{Programmed BeagleBone Black to communicate with a RC8660 talker boards and NewHaven LCD using assembly.\\}
+\vspace{-1mm}			
+
+\cventry
+{}
+{Buck Converter}
+{}
+{\textit{Oscilloscope, Matlab, Soldering}}
+{}
+{Built buck converter, tested the design, and then improved the compensator stage design by using bode plot analysis.\\}
+\vspace{-1mm}	
+
+
+%%				\cventry
+%			{}
+%			{Fixture Build}
+%			{}
+%			{\textit{Soldering, Schematics, BOM}}
+%			{}
+%			{Built multiple fixture based on BOM and schematics used in testing production pacemakers and defibrillator.\\}
+%	\vspace{-1mm}	
+				
+\end{document}
